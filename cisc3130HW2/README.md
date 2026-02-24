@@ -1,4 +1,4 @@
-Important!
+#Important!
 Before running the program, understand that since all of the classes are java classes, you will need the Java Development Kit (JDK) to compile the program. I also recommend putting all of the files of the repository into a single folder to avoid potential issues with files not being able to access each other. One more thing before I start describing the classes, try running the program on an IDE. Since I made these programs on Eclipse, all of the classes will have a package line on the first line. If you are not running this program on an IDE that does not require the package header, then remove that line from all of the classes that have it. Lastly, make sure you paste the folder into the src folder of your IDE, otherwise it will not run!
 
 --Class Descriptions--
