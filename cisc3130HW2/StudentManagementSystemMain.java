@@ -248,8 +248,12 @@ public class StudentManagementSystemMain {
 	public static void calculateGPA(EnrollmentManager em, Scanner in, StudentManager sm) {
 		System.out.print("Enter Student ID: ");
 		String studentId = in.nextLine();
-		sm.findStudent(studentId).setGPA(em.calculateStudentGpa(studentId));
-		System.out.printf("Student's GPA: %.1f%n%n" , em.calculateStudentGpa(studentId));
+		if (sm.findStudent(studentId) != null) {
+			sm.findStudent(studentId).setGPA(em.calculateStudentGpa(studentId));
+			System.out.printf("Student's GPA: %.1f%n%n" , em.calculateStudentGpa(studentId));
+		} else {
+			System.out.println("Cannot find that student!");
+		}
 	}
 	
 	/*
